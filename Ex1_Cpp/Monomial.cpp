@@ -42,5 +42,5 @@ int Monomial::get_count() const {
 }
 
 void Monomial::print_data() const {
-    
+    std::cout << get_c() << "*x^" << get_d();
 }
