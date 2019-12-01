@@ -21,6 +21,15 @@ Monomial::~Monomial(){
     std::cout << "This is a destructor!" <<std::endl;
 }
 
+bool Monomial::add(Monomial & monom) {
+    if (d != monom.get_d()) {
+        std::cout << "Impossible to add different degrees" <<std::endl;
+        return false;
+    }
+    c += monom.get_c();
+    return true;
+}
+
 void Monomial::set_c(int coef) {
     c = coef;
 }
@@ -37,10 +46,13 @@ unsigned int Monomial::get_d() const {
     return d;
 }
 
-int Monomial::get_count() const {
+int Monomial::getNumberOfMonomials() const {
     return monom_count;
 }
 
-void Monomial::print_data() const {
-    std::cout << get_c() << "*x^" << get_d();
+void Monomial::print() const {
+    if (c == 0)
+        
+        
+    std::cout << get_c() << "*x^" << get_d()<<std::endl;
 }

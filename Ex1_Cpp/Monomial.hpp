@@ -12,17 +12,16 @@ class Monomial {
 public:
     Monomial(int=1, unsigned int=0);
     ~Monomial();
+    bool add(Monomial &);
     void set_c(int=1);
     void set_d(unsigned int=0);
     int get_c() const;
     unsigned int get_d() const;
-    int get_count() const;
-    void print_data() const;
+    int getNumberOfMonomials() const;
+    void print() const;
 
 private:
     int c;
     unsigned int d;
     static int monom_count;
-
-
 };
