@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		64691B892393EF6700BA4C5A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64691B882393EF6700BA4C5A /* main.cpp */; };
+		CB2436612393FAA600DCB0C5 /* Monomial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB24365F2393FAA600DCB0C5 /* Monomial.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		64691B852393EF6700BA4C5A /* Ex1_Cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ex1_Cpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		64691B882393EF6700BA4C5A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CB24365F2393FAA600DCB0C5 /* Monomial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Monomial.cpp; sourceTree = "<group>"; };
+		CB2436602393FAA600DCB0C5 /* Monomial.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Monomial.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				64691B882393EF6700BA4C5A /* main.cpp */,
+				CB24365F2393FAA600DCB0C5 /* Monomial.cpp */,
+				CB2436602393FAA600DCB0C5 /* Monomial.hpp */,
 			);
 			path = Ex1_Cpp;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64691B892393EF6700BA4C5A /* main.cpp in Sources */,
+				CB2436612393FAA600DCB0C5 /* Monomial.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
