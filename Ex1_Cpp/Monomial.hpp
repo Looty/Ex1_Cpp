@@ -14,9 +14,10 @@ public:
     ~Monomial();
     void set_c(int=1);
     void set_d(unsigned int=0);
-    int get_c();
-    unsigned int get_d();
-    static int get_count();
+    int get_c() const;
+    unsigned int get_d() const;
+    int get_count() const;
+    void print_data() const;
 
 private:
     int c;
