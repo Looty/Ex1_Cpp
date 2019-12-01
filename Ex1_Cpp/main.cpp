@@ -8,8 +8,8 @@
 
 #include <iostream>
 #include <iomanip>
-#include "Monomial.h"
-#include "Polynomial.h"
+#include "Monomial.hpp"
+#include "Polynomial.hpp"
 
 using namespace std;
 

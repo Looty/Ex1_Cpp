@@ -17,16 +17,17 @@ Monomial::Monomial(int coef, unsigned int deg) {
     monom_count++;
 }
 
-Monomial::~Monomial(){
-    std::cout << "This is a destructor!" <<std::endl;
+Monomial::~Monomial() {
+    monom_count--;
+    std::cout << "DESTRUCTOR HAS BEEN CALLED!" <<std::endl;
 }
 
 bool Monomial::add(Monomial & monom) {
-    if (d != monom.get_d()) {
+    if (get_d() != monom.get_d()) {
         std::cout << "Impossible to add different degrees" <<std::endl;
         return false;
     }
-    c += monom.get_c();
+    set_c(get_c() + monom.get_c());
     return true;
 }
 
@@ -46,13 +47,24 @@ unsigned int Monomial::get_d() const {
     return d;
 }
 
-int Monomial::getNumberOfMonomials() const {
+int Monomial::getNumberOfMonomials() {
     return monom_count;
 }
 
 void Monomial::print() const {
-    if (c == 0)
-        
-        
-    std::cout << get_c() << "*x^" << get_d()<<std::endl;
+    if (get_c() == 0) {
+        std::cout << "0" <<std::endl;
+    }
+    else if (get_c() == 1) {
+        if (get_d() == 1)
+            std::cout << "x" <<std::endl;
+        else if (get_d() == 0)
+            std::cout << "1" <<std::endl;
+        else
+            std::cout << "x^" << get_d() <<std::endl;
+    }
+    else if (get_d() == 0)
+        std::cout << get_c() <<std::endl;
+    else
+        std::cout << get_c() << "*x^" << get_d()<<std::endl;
 }

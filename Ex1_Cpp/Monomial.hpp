@@ -17,7 +17,7 @@ public:
     void set_d(unsigned int=0);
     int get_c() const;
     unsigned int get_d() const;
-    int getNumberOfMonomials() const;
+    static int getNumberOfMonomials();
     void print() const;
 
 private:
