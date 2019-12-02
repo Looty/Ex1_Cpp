@@ -1,4 +1,5 @@
 # Ex1_Cpp
+This is the first project of OOP in 1st semester, second year.
 
 # Kobi
 // TODO: fix degree datamember/functions- should be const
