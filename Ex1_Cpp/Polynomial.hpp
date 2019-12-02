@@ -7,22 +7,18 @@
 //
 
 #pragma once
-#include <stdio.h>
 #include "Monomial.hpp"
 
 class Polynomial {
     public:
-        void print();
-        void add(Monomial & m);
+        Polynomial();
+        ~Polynomial();
+        void print() const;
+        int getMonomials() const;
+        coid setMonomials(int);
+        void add(Monomial &);
+        void add(Monomial);
     
     private:
-        //int
-}
-
-/*
-
-c - mekadam
-d = hezka
-mono_count - counter
-
- */
+        int monomials;
+};
