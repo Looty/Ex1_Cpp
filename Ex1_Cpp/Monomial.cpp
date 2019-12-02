@@ -19,12 +19,10 @@ Monomial::Monomial(int coef, unsigned int deg) {
 
 Monomial::~Monomial() {
     monom_count--;
-    std::cout << "DESTRUCTOR HAS BEEN CALLED!" <<std::endl;
 }
 
 bool Monomial::add(Monomial & monom) {
     if (get_d() != monom.get_d()) {
-        std::cout << "Impossible to add different degrees" <<std::endl;
         return false;
     }
     set_c(get_c() + monom.get_c());
