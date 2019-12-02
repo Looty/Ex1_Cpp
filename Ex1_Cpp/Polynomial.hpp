@@ -8,4 +8,21 @@
 
 #pragma once
 #include <stdio.h>
+#include "Monomial.hpp"
 
+class Polynomial {
+    public:
+        void print();
+        void add(Monomial & m);
+    
+    private:
+        //int
+}
+
+/*
+
+c - mekadam
+d = hezka
+mono_count - counter
+
+ */
